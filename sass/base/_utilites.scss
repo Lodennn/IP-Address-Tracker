@@ -1,0 +1,53 @@
+// COLORS
+.cl-white {
+  color: #fff;
+}
+
+.cl-black {
+  color: #000;
+}
+
+// ULs / OLs
+.list-unstyled {
+  list-style: none;
+}
+
+// DIV
+.grid-item-center {
+  grid-column: 1 / -1;
+  align-self: center;
+  justify-self: center;
+}
+
+// MARGINS
+.mt-xs {
+  margin-top: 1rem;
+}
+.mt-sm {
+  margin-top: 2rem;
+}
+.mt-md {
+  margin-top: 3rem;
+}
+.mt-lg {
+  margin-top: 4rem;
+}
+.mt-xl {
+  margin-top: 5rem;
+}
+
+.mb-xs {
+  margin-bottom: 1rem;
+}
+.mb-sm {
+  margin-bottom: 2rem;
+}
+.mb-md {
+  margin-bottom: 3rem;
+}
+.mb-lg {
+  margin-bottom: 4rem;
+}
+.mb-xl {
+  margin-bottom: 5rem;
+}

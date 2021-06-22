@@ -1,0 +1,110 @@
+.ip {
+  &__header {
+    background: url("../images/pattern-bg.png") no-repeat center center;
+    background-size: cover;
+    grid-row: 1 / 2;
+    grid-column: gutter-start / gutter-end;
+
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+    text-align: center;
+    padding: 5rem 0 2rem 0;
+  }
+
+  &__form {
+    width: 40rem;
+    display: flex;
+    justify-content: center;
+    @media screen and (max-width: 56.25em) {
+      width: auto;
+      flex-direction: column;
+    }
+    &-input {
+      width: 90%;
+      padding: 1.5rem 1.5rem 1.5rem 2rem;
+      border-top-left-radius: 1rem;
+      border-bottom-left-radius: 1rem;
+      border: none;
+      &:focus {
+        outline: none;
+      }
+      @media screen and (max-width: 56.25em) {
+        border-radius: 0;
+        width: auto;
+      }
+    }
+    ::-webkit-input-placeholder {
+      color: $color-light-gray;
+    }
+    &-submit {
+      border: none;
+      width: 4rem;
+      border-top-right-radius: 1rem;
+      border-bottom-right-radius: 1rem;
+      background-color: $color-dark-gray;
+      cursor: pointer;
+      @media screen and (max-width: 56.25em) {
+        border-radius: 0;
+        width: auto;
+        padding: 1rem;
+      }
+    }
+  }
+
+  &__preview {
+    z-index: $zIndexHigh;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    background: $color-white;
+    width: 90rem;
+    height: 12rem;
+    margin-top: 5rem;
+    padding: 2rem;
+    border-radius: 1rem;
+    text-align: left;
+    @media screen and (max-width: 56.25em) {
+      height: auto;
+      width: auto;
+      grid-template-columns: 1fr;
+      justify-items: center;
+    }
+    &-item {
+      position: relative;
+      width: 60%;
+      @media screen and (max-width: 56.25em) {
+        // width: auto;
+        // margin-bottom: 1.5rem;
+      }
+
+      &:not(:first-child):after {
+        content: "";
+        position: absolute;
+        width: 1px;
+        height: 80%;
+        top: 50%;
+        transform: translateY(-50%);
+        left: -2rem;
+        background: $color-light-gray-1;
+        @media screen and (max-width: 56.25em) {
+          // display: none;
+        }
+      }
+
+      &--label {
+        text-transform: uppercase;
+        color: $color-light-gray;
+        font-weight: $font-weight-md;
+        margin-bottom: 1rem;
+        @media screen and (max-width: 56.25em) {
+          // margin-bottom: 0.5rem;
+        }
+      }
+      &--value {
+        font-size: $font-size-primary;
+        font-weight: $font-weight-lg;
+        color: $color-dark-gray-1;
+      }
+    }
+  }
+}

@@ -1,0 +1,6 @@
+.spinner {
+  animation: spinner 2s infinite forwards;
+  &__img {
+    width: 5rem;
+  }
+}

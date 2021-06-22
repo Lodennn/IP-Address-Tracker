@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="node_modules/leaflet/dist/leaflet.css" />
+    <script defer src="node_modules/leaflet/dist/leaflet.js"></script>
+    <script defer src="js/index.js"></script>
+    <title>IP Address Tracker</title>
+  </head>
+  <body>
+    <div class="container ip">
+      <header class="ip__header">
+        <h2 class="heading-2 cl-white">IP Address Tracker</h2>
+        <form action="" class="ip__form mt-xs">
+          <input
+            type="search"
+            class="ip__form-input"
+            placeholder="IP Address e.g 192.212.174.101"
+          />
+          <button class="ip__form-submit">
+            <img src="images/icon-arrow.svg" alt="Arrow" />
+          </button>
+        </form>
+        <ul class="ip__preview list-unstyled mt-xs">
+          <!-- <li class="ip__preview-item">
+            <div class="ip__preview-item--label">IP Address</div>
+            <div class="ip__preview-item--value">192.212.174.101</div>
+          </li>
+          <li class="ip__preview-item">
+            <div class="ip__preview-item--label">Location</div>
+            <div class="ip__preview-item--value">Brooklyn, NY 10001</div>
+          </li>
+          <li class="ip__preview-item">
+            <div class="ip__preview-item--label">Timezone</div>
+            <div class="ip__preview-item--value">UTC -05:00</div>
+          </li>
+          <li class="ip__preview-item">
+            <div class="ip__preview-item--label">ISP</div>
+            <div class="ip__preview-item--value">SpaceX Startlink</div>
+          </li> -->
+          <!-- <div class="error grid-item-center">
+            <p class="error__message">
+              Sorry, This ip is wrong ! Please enter a valid ip address
+            </p>
+          </div> -->
+          <!-- <div class="spinner grid-item-center">
+            <img src="images/icon-loading.svg" class='spinner__img' />
+          </div> -->
+        </ul>
+      </header>
+      <div id="map"></div>
+    </div>
+  </body>
+</html>
